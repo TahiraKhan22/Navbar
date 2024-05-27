@@ -1,0 +1,95 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ .navbar{
+    display: flex ;
+    justify-content: space-between;
+    margin-left: 3rem
+ }
+ .unordered-list{
+    overflow: hidden;
+    transition: var(--transition);
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    font-size: 20px;
+ }
+ .Home:hover{
+    color: skyblue;
+}
+.About:hover{
+    color: skyblue;
+}
+.Services:hover{
+    color: skyblue;
+}
+.content:hover{
+   color: skyblue;
+}
+ .fa-bars{ 
+    margin-right: 3rem;
+    margin-top: 1.2rem;
+    visibility: hidden;
+ }
+ .www{
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    font-size: 15px;
+    padding: 5px;
+    /* margin-left: 20rem; */
+    /* color: skyblue; */
+ }
+ i{
+    color: skyblue;
+ }
+
+ @media(max-width: 768px){
+    .unordered-list{
+        visibility: hidden;
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 2.5rem;
+        right: -1.99rem;
+        padding: 1rem;
+    }
+    .unordered-list li{
+        margin-right: 3rem;
+    }
+    .unordered-list.active{
+        visibility: visible;
+    }
+    .fa-bars{
+        visibility: visible;
+    }
+    .fa-bars:hover{
+        color: skyblue;    
+    }
+    .www{
+        visibility: hidden;
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 2.5rem;
+        right: -1.99rem;
+        padding: 1rem;
+    }
+    .Home:hover{
+        background-color: aqua;
+    }
+    .About:hover{
+        background-color: aqua;
+    }
+    .Services:hover{
+        background-color: aqua;
+    }
+    .content:hover{
+        background-color: aqua;
+    }
+
+ }
+
+ 
